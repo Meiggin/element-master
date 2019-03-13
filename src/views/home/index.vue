@@ -1,16 +1,15 @@
 <template>
   <div class="app-home">
     <el-container>
-      <el-header height="30px">
-          <el-row class="home_header">
+      <el-header height="40px">
+          <el-row class="home_header meiggin">
             <el-col :span="5"><i class="el-icon-phone"></i><span>客服电话：400000000</span></el-col>
-            <el-col :span="15"><div class="grid"></div></el-col>
-            <el-col  :span="2" class="active"><button>登陆</button></el-col>
-            <el-col  :span="2" class="active"><button>注册</button></el-col>
+            <el-col class="active" style="float:right"><button>登陆</button></el-col>
+            <el-col class="active" style="float:right"><button>注册</button></el-col>
           </el-row>
       </el-header>
       <el-main>
-        <el-row>
+        <el-row class="meiggin home_main">
           <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" active-text-color="#434a54" default-active='home' :router=true >
             <!-- <img src='./../../styles/images/logo.png'/> -->
             <div style="float:left">LOGO</div>
@@ -54,10 +53,15 @@
 </script>
 
 <style scope>
+.el-container{
+  width: 100%;
+}
 /** 头部------ */
-
+.home_header{
+  margin: 0 auto;
+}
 .el-header .el-col{
-  font:10px/30px 'microsoft yahei';
+  font:10px/40px 'microsoft yahei';
   color:#E6E6E6;
 }
 .el-header .el-col span{
@@ -66,15 +70,16 @@
   }
 .el-header  .el-icon-phone{
     float:left;
-    margin:10px 10px 0 0;
+    margin:15px 10px 0 0;
   }
 .el-header{
   background:#434a54;
+  padding:0;
 }
 .el-header button{
   width:100%;
-  height:30px;
-  font:10px/30px 'microsoft yahei';
+  height:40px;
+  font:10px/40px 'microsoft yahei';
   padding:0;
   margin:0;
   border:none;
@@ -85,12 +90,18 @@
 .el-header .grid{
   height:30px;
 }
+.el-header .active{
+  width: 30px
+}
 .el-header .active button:hover{
   background:#313531;
   cursor:pointer;
 }
 
 /** main------ */
+.home_main{
+  margin:0 auto;
+}
 .el-main{
   padding:0;
 }
@@ -99,9 +110,6 @@
 }
 .el-main .el-menu img{
   width:200px;
-}
-.el-main .el-menu.el-menu--horizontal{
-  padding:0 20px;
 }
 .el-menu--horizontal>.el-menu-item{
   float:right;
@@ -132,6 +140,9 @@
 }
 .el-menu--horizontal>.el-menu-item{
     line-height: 42px;
+}
+.el-menu.el-menu--horizontal{
+  border-bottom: none;
 }
 /* 轮播图数据 */
 .el-carousel__item{
