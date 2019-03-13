@@ -1,0 +1,131 @@
+
+/** 头部------ */
+.home_header{
+    margin: 0 auto;
+  }
+   .el-header .el-container{
+    width: 100%;
+  }
+  .el-header .el-col{
+    font:10px/40px 'microsoft yahei';
+    color:#E6E6E6;
+  }
+  .el-header .el-col span{
+      display:block;
+      float:left;
+    }
+  .el-header  .el-icon-phone{
+      float:left;
+      margin:15px 10px 0 0;
+    }
+  .el-header{
+    background:#434a54;
+    padding:0;
+  }
+  .el-header button{
+    width:100%;
+    height:40px;
+    font:10px/40px 'microsoft yahei';
+    padding:0;
+    margin:0;
+    border:none;
+    background:#434a54;
+    color:#E6E6E6;
+    outline:none;
+  }
+  .el-header .grid{
+    height:30px;
+  }
+  .el-header .active{
+    width: 30px
+  }
+  .el-header .active button:hover{
+    background:#313531;
+    cursor:pointer;
+  }
+  
+  /** main------ */
+  .home_main{
+    margin:0 auto;
+  }
+  .el-main{
+    padding:0;
+  }
+  .el-main .el-menu{
+    margin-top:20px;
+  }
+  .el-main .el-menu img{
+    width:200px;
+  }
+  .el-menu--horizontal>.el-menu-item{
+    float:right;
+  }
+  
+  /*数据导航*/
+  .datanav{
+      height:60px;
+      background-color:#fff;
+      margin:40px auto;
+      padding-bottom:20px;
+        padding: 0 50px;
+  }
+  .datanav .txt{
+      width:25%;
+      height:70px;
+      float:left;
+      text-align:center;
+  }
+  .datanav .txt span{
+      font:14px/60px 'microsoft yahei';
+      color:#666;
+  }
+  .datanav .txt em{
+      font:32px/60px 'microsoft yahei';
+      text-align:center;
+      color:#F60;
+  }
+  .el-menu--horizontal>.el-menu-item{
+      line-height: 42px;
+  }
+  .el-menu.el-menu--horizontal{
+    border-bottom: none;
+  }
+  /* 轮播图数据 */
+  .el-carousel__item{
+    margin-top:20px;
+  }
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+        background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+        background-color: #d3dce6;
+  }
+  /* 最新上架 */
+  .home_new{
+        margin:0 auto;
+  }
+  .home_new_trading{
+        white-space: normal;
+      word-break: break-all;
+      line-height: 23px;
+      padding-right: 10px;
+      overflow: hidden;
+      padding-left: 10px;
+      text-align: left;
+      color: #909399;
+      font-size: 14px;
+      text-align: center
+  }
+  /* 导视图 */
+  .charcanvs{
+      margin: 30px auto;
+  }
